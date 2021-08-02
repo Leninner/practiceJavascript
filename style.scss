@@ -6,11 +6,48 @@
 
 $mainColor: #575757;
 $secondColor: #e44232;
+$gradient: linear-gradient(#1fbb87, #804aff);
 
 @mixin margen {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+input {
+    background: transparent;
+    border-radius: 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    height: 50px;
+    margin-left: 10px;
+    color: white;
+}
+input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0px 10px;
+    width: 100px;
+}
+
+button:hover {
+    border: 2px solid white;
 }
 
 .header {
@@ -21,48 +58,107 @@ $secondColor: #e44232;
     align-items: center;
     border-bottom: 2px solid $secondColor;
     padding-bottom: 18px;
-}
 
-.header__section {
-    flex: 7;
-    h1 {
-        margin: 15px 20px 0px;
-        color: $secondColor;
-        cursor: pointer;
-    }
-    p {
-        margin-left: 20px;
-        cursor: default;
-    }
-}
-
-.menu {
-    color: $mainColor;
-    flex: 2;
-    margin-right: 10px;
-
-    ul {
-        display: flex;
+    .header__section {
+        flex: 7;
+        h1 {
+            margin: 15px 20px 0px;
+            color: $secondColor;
+            cursor: pointer;
+        }
+        p {
+            margin-left: 20px;
+            cursor: default;
+        }
     }
 
-    ul > li {
-        cursor: pointer;
-        list-style: none;
-    }
-
-    li > a {
-        @include margen;
-        cursor: pointer;
-        width: 100px;
-        height: 50px;
-        border: 2px solid white;
-        text-decoration: none;
+    .menu {
         color: $mainColor;
-        opacity: 0.7;
-    }
+        flex: 2;
+        margin-right: 10px;
 
-    a:hover {
-        border-bottom: 2px solid $secondColor;
-        opacity: 1;
+        ul {
+            display: flex;
+        }
+
+        ul > li {
+            cursor: pointer;
+            list-style: none;
+        }
+
+        li > a {
+            @include margen;
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+            border: 2px solid white;
+            text-decoration: none;
+            color: $mainColor;
+            opacity: 0.8;
+        }
+
+        a:hover {
+            border-bottom: 2px solid $secondColor;
+            opacity: 1;
+        }
     }
+}
+
+.info {
+    width: 100%;
+    height: calc(100vh - 5rem - 18px);
+    background-color: green;
+}
+
+.formCuadrado {
+    width: 100%;
+    height: auto;
+    background: $gradient;
+    @include margen;
+    text-align: center;
+
+    .formCuadrado__contenedor {
+        font-size: 16px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 40px;
+        color: white;
+        padding: 60px 68px 40px;
+        min-height: 400px;
+        min-width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 20px 0px;
+
+        form {
+            section {
+                margin: 20px 0px;
+            }
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        label {
+            font-size: 19px;
+        }
+    }
+}
+
+.formTriangulo {
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+}
+
+.formCirculo {
+    width: 100%;
+    height: auto;
+    background-color: yellowgreen;
+}
+
+.footer {
+    width: 100%;
+    height: 5rem;
+    background-color: $secondColor;
 }

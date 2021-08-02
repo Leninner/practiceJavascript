@@ -1,27 +1,44 @@
 // Cuadrado
 
-function perimetroCuadrado(lado) {
+const perimetroCuadrado = (lado) => {
     return lado * 4;
-}
+};
 
-function areaCuadrado(lado) {
+const areaCuadrado = (lado) => {
     return lado ** 2;
-}
+};
+
+const btnPerimetroCuadrado = document.querySelector("#perimetroCuadrado"),
+    btnAreaCuadrado = document.querySelector("#areaCuadrado");
+
+let ladoCuadrado = document.querySelector("#ladoCuadrado"),
+    resultadoCuadrado = document.querySelector("#resultadoCuadrado");
+
+btnPerimetroCuadrado.addEventListener("click", () => {
+    resultadoCuadrado.textContent = "";
+    resultadoCuadrado.textContent = perimetroCuadrado(ladoCuadrado.value);
+});
+btnAreaCuadrado.addEventListener("click", () => {
+    resultadoCuadrado.textContent = "";
+    resultadoCuadrado.textContent = areaCuadrado(ladoCuadrado.value);
+});
 
 // Triángulos
 
-function perimetroTriangulo(ladoOne, ladoTwo, base) {
+const perimetroTriangulo = (ladoOne, ladoTwo, base) => {
     return ladoOne + ladoTwo + base;
-}
-function areaTriangulo(base, altura) {
+};
+
+const areaTriangulo = (base, altura) => {
     return (base * altura) / 2;
-}
+};
 
 // Círculos
 
-function perimetroCirculo(diametro) {
+const perimetroCirculo = (diametro) => {
     return Math.PI * diametro;
-}
-function areaCirculo(diametro) {
+};
+
+const areaCirculo = (diametro) => {
     return (diametro / 2) ** 2 * Math.PI;
-}
+};
