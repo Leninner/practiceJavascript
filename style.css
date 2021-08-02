@@ -10,6 +10,8 @@
   display: flex;
   color: #575757;
   align-items: center;
+  border-bottom: 2px solid #e44232;
+  padding-bottom: 18px;
 }
 
 .header__section {

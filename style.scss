@@ -19,6 +19,8 @@ $secondColor: #e44232;
     display: flex;
     color: $mainColor;
     align-items: center;
+    border-bottom: 2px solid $secondColor;
+    padding-bottom: 18px;
 }
 
 .header__section {
