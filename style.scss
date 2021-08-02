@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+$mainColor: #020024;
+$gradientOne: #790962;
+
+.header {
+    width: 100%;
+    height: 4rem;
+    background: rgba(131, 58, 180, 1);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+
+.header h1,
+p {
+    margin-left: 10px;
+}
