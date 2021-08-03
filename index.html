@@ -22,16 +22,23 @@
 
             <section class="menu">
                 <ul>
-                    <li><a href="#" target="">Cuadrados</a></li>
-                    <li><a href="#" target="">Triángulos</a></li>
-                    <li><a href="#" target="">Círculos</a></li>
+                    <li><a href="#formCuadrado" target="">Cuadrado</a></li>
+                    <li><a href="#formTriangulo" target="">Triángulo</a></li>
+                    <li><a href="#formCirculo" target="">Círculo</a></li>
                 </ul>
             </section>
         </header>
 
-        <section class="info">info</section>
+        <section class="info">
+            <div class="text">
+                <p>Calcular Perímetros y Áreas, nunca fue tan fácil</p>
+            </div>
+            <aside class="aside">
+                <img src="pintar.svg" alt="" />
+            </aside>
+        </section>
 
-        <section class="formCuadrado">
+        <section class="formCuadrado" id="formCuadrado">
             <div class="formCuadrado__contenedor">
                 <h2>Cuadrado</h2>
                 <p>¿Cuál es la medida del lado?</p>
@@ -40,8 +47,8 @@
                         Lado:
                         <input
                             id="ladoCuadrado"
-                            type="text"
-                            placeholder="numero"
+                            type="number"
+                            placeholder="lado"
                         />
                     </section>
                     <section>
@@ -51,15 +58,75 @@
                         <button id="areaCuadrado" type="button">Área</button>
                     </section>
                 </form>
-                <label for="" id="resultadoCuadrado"
-                    >Este es un label guapo</label
-                >
+                <label for="" id="resultadoCuadrado"></label>
             </div>
         </section>
 
-        <section class="formTriangulo">Triángulos</section>
+        <section class="formTriangulo formCuadrado" id="formTriangulo">
+            <div class="formTriangulo__contenedor formCuadrado__contenedor">
+                <h2>Triángulo</h2>
+                <p>Ingresa la información del Triángulo</p>
+                <form action="">
+                    <section class="formTriangulo__contenedor--section">
+                        Lado A:
+                        <input
+                            type="number"
+                            id="ladoATriangulo"
+                            placeholder="A"
+                        />
+                        Lado B:
+                        <input
+                            type="number"
+                            id="ladoBTriangulo"
+                            placeholder="B"
+                        />
+                        Base:
+                        <input
+                            type="number"
+                            id="baseTriangulo"
+                            placeholder="Base"
+                        />
+                        Altura:
+                        <input
+                            type="number"
+                            id="alturaTriangulo"
+                            placeholder="Altura"
+                        />
+                    </section>
+                    <section>
+                        <button id="perimetroTriangulo" type="button">
+                            Perímetro
+                        </button>
+                        <button id="areaTriangulo" type="button">Área</button>
+                    </section>
+                </form>
+                <label id="resultadoTriangulo"></label>
+            </div>
+        </section>
 
-        <section class="formCirculo">Circulos</section>
+        <section class="formCirculo formCuadrado" id="formCirculo">
+            <div class="formCirculo__contenedor formCuadrado__contenedor">
+                <h2>Circulo</h2>
+                <p>Ingresa el diámetro del circulo</p>
+                <form action="">
+                    <section class="formTriangulo__contenedor--section">
+                        Diámetro:
+                        <input
+                            type="number"
+                            id="diametro"
+                            placeholder="Diámetro"
+                        />
+                    </section>
+                    <section>
+                        <button id="perimetroCirculo" type="button">
+                            Perímetro
+                        </button>
+                        <button id="areaCirculo" type="button">Área</button>
+                    </section>
+                </form>
+                <label id="resultadoCirculo"></label>
+            </div>
+        </section>
 
         <footer class="footer">Footer</footer>
 

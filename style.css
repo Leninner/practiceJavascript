@@ -50,6 +50,7 @@ button:hover {
   align-items: center;
   border-bottom: 2px solid #e44232;
   padding-bottom: 18px;
+  letter-spacing: 1px;
 }
 .header .header__section {
   flex: 7;
@@ -95,7 +96,25 @@ button:hover {
 .info {
   width: 100%;
   height: calc(100vh - 5rem - 18px);
-  background-color: green;
+  display: flex;
+}
+.info .text {
+  letter-spacing: 1px;
+  color: #e44232;
+  font-weight: 400;
+  font-size: 25px;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding-left: 20px;
+}
+.info .aside {
+  display: flex;
+  align-items: center;
+  flex: 5;
+  justify-content: center;
 }
 
 .formCuadrado {
@@ -137,6 +156,10 @@ button:hover {
   width: 100%;
   height: auto;
   background-color: yellow;
+}
+.formTriangulo .formTriangulo__contenedor form .formTriangulo__contenedor--section {
+  display: flex;
+  flex-direction: column;
 }
 
 .formCirculo {
