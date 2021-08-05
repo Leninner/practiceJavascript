@@ -49,19 +49,19 @@ $color-main: #f0db4f;
                 li {
                     cursor: pointer;
                     list-style: none;
-                    display: flex;
-                    align-items: center;
-                    height: 50px;
                     border-top: 1px solid $background-main;
                     border-right: 1px solid $background-main;
                     border-left: 1px solid $background-main;
                     a {
+                        height: 50px;
                         text-decoration: none;
                         color: $color-main;
+                        display: flex;
+                        align-items: center;
                     }
-                }
-                li:hover {
-                    border-bottom: 1px solid $color-main;
+                    a:hover {
+                        border-bottom: 1px solid $color-main;
+                    }
                 }
             }
         }

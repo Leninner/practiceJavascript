@@ -78,18 +78,18 @@ button:hover {
 .header .menu ul li {
   cursor: pointer;
   list-style: none;
-  display: flex;
-  align-items: center;
-  height: 50px;
   border-top: 1px solid #323330;
   border-right: 1px solid #323330;
   border-left: 1px solid #323330;
 }
 .header .menu ul li a {
+  height: 50px;
   text-decoration: none;
   color: #f0db4f;
+  display: flex;
+  align-items: center;
 }
-.header .menu ul li:hover {
+.header .menu ul li a:hover {
   border-bottom: 1px solid #f0db4f;
 }
 
