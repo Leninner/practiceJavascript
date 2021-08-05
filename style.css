@@ -1,0 +1,44 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 110px;
+  background-color: #323330;
+  color: #f0db4f;
+  font-size: 18px;
+  display: flex;
+}
+.header .header__title {
+  display: flex;
+  width: 50%;
+  background-color: red;
+}
+.header .header__title img {
+  width: 70px;
+  border-radius: 16px;
+  margin: 0px 20px;
+}
+.header .header__menu {
+  display: flex;
+  width: 50%;
+  height: 110px;
+  background-color: red;
+}
+
+@media only screen and (max-width: 834px) {
+  .header {
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .header {
+    height: 77px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -57,3 +57,6 @@ console.log({ medianaGeneralEcu, medianaTop10Ecu });
 // Presenta los resultados de tu informe en una página web dinámica usando HTML, CSS y JavaScript.
 // Organiza y documenta tu código para que sea más fácil de leer y entender.
 // Publícalo en tu repositorio de GitHub y muéstranos el link en la sección de comentarios.
+
+//TODO: https://www.glajumedia.com/wp-content/uploads/2019/12/ecommerce-website-kbworks.png
+//Inspiración
