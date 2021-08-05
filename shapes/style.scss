@@ -1,10 +1,13 @@
 * {
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 $mainColor: #575757;
+$background-main: #323330;
+$color-main: #f0db4f;
 $secondColor: #e44232;
 $gradient: linear-gradient(#1fbb87, #804aff);
 
@@ -52,55 +55,53 @@ button:hover {
 
 .header {
     width: 100%;
-    height: 5rem;
+    height: 110px;
     display: flex;
-    color: $mainColor;
+    color: $color-main;
     align-items: center;
-    border-bottom: 2px solid $secondColor;
-    padding-bottom: 18px;
-    letter-spacing: 1px;
+    background-color: $background-main;
 
     .header__section {
-        flex: 7;
+        margin-left: 83px;
+        flex: 1.2;
         h1 {
-            margin: 15px 20px 0px;
-            color: $secondColor;
             cursor: pointer;
+            font-size: 36px;
+            letter-spacing: 1px;
         }
         p {
-            margin-left: 20px;
             cursor: default;
+            font-size: 16px;
+            letter-spacing: 1px;
         }
     }
 
     .menu {
-        color: $mainColor;
-        flex: 2;
-        margin-right: 10px;
+        flex: 1;
+        margin-right: 15px;
 
         ul {
             display: flex;
-        }
-
-        ul > li {
-            cursor: pointer;
-            list-style: none;
-        }
-
-        li > a {
-            @include margen;
-            cursor: pointer;
-            width: 100px;
-            height: 50px;
-            border: 2px solid white;
-            text-decoration: none;
-            color: $mainColor;
-            opacity: 0.8;
-        }
-
-        a:hover {
-            border-bottom: 2px solid $secondColor;
-            opacity: 1;
+            align-items: center;
+            margin-right: 20px;
+            justify-content: space-evenly;
+            li {
+                cursor: pointer;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                height: 50px;
+                border-top: 1px solid $background-main;
+                border-right: 1px solid $background-main;
+                border-left: 1px solid $background-main;
+                a {
+                    text-decoration: none;
+                    color: $color-main;
+                }
+            }
+            li:hover {
+                border-bottom: 1px solid $color-main;
+            }
         }
     }
 }
