@@ -74,43 +74,41 @@ $color-main: #f0db4f;
 .info {
     width: 100%;
     min-height: calc(100vh - 110px);
-    background-color: grey;
     display: flex;
     align-items: center;
 
     .contenedor__info {
         width: 50%;
-        outline: 1px solid red;
         display: flex;
         height: calc(100vh - 110px);
         align-items: center;
 
         .contenedor__info--details {
-            width: 60%;
+            width: 74%;
             height: 50%;
-            background-color: red;
             margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
+            color: $background-main;
+            font-size: 25px;
 
             button {
                 text-align: center;
-                margin-top: 15px;
+                margin-top: 50px;
                 border-style: none;
                 background-color: $background-main;
                 color: $color-main;
-                width: 150px;
-                height: 50px;
-                border-radius: 24px;
-                font-size: 18px;
+                width: 235px;
+                height: 65px;
+                border-radius: 16px;
+                font-size: 26px;
+                font-weight: bold;
             }
         }
 
         .contenedor__info--img {
             margin: 0 auto;
+            img {
+                width: 450px;
+            }
         }
     }
 }
