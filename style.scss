@@ -113,6 +113,27 @@ $color-main: #f0db4f;
     }
 }
 
+.geometria__info {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    div {
+        width: 40%;
+        margin: 0 auto;
+        height: 80%;
+        background-color: red;
+
+        .contenedor__geometria--info {
+            h2 > em {
+                margin-bottom: 20px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 835px) {
     .header {
         height: 90px;
