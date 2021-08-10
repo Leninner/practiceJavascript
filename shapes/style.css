@@ -20,8 +20,7 @@ input {
   margin-left: 10px;
   color: white;
 }
-
-input::placeholder {
+input input::placeholder {
   color: white;
   opacity: 0.5;
 }
@@ -93,34 +92,10 @@ button:hover {
   border-bottom: 1px solid #f0db4f;
 }
 
-.info {
-  width: 100%;
-  height: calc(100vh - 5rem - 18px);
-  display: flex;
-}
-.info .text {
-  letter-spacing: 1px;
-  color: #e44232;
-  font-weight: 400;
-  font-size: 25px;
-  flex: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  padding-left: 20px;
-}
-.info .aside {
-  display: flex;
-  align-items: center;
-  flex: 5;
-  justify-content: center;
-}
-
 .formCuadrado {
   width: 100%;
   height: auto;
-  background: linear-gradient(#1fbb87, #804aff);
+  background: #323330;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,27 +126,47 @@ button:hover {
 .formCuadrado .formCuadrado__contenedor label {
   font-size: 19px;
 }
+.formCuadrado .formCuadrado__contenedor .poligCuadrado {
+  width: 150px;
+  height: 150px;
+  background: #f0db4f;
+  margin: 15px auto;
+}
 
 .formTriangulo {
   width: 100%;
   height: auto;
-  background-color: yellow;
+  background-color: #323330;
 }
 .formTriangulo .formTriangulo__contenedor form .formTriangulo__contenedor--section {
   display: flex;
   flex-direction: column;
 }
+.formTriangulo .formTriangulo__contenedor .poligTriangulo {
+  border-right: 75px solid transparent;
+  border-top: 0;
+  border-left: 75px solid transparent;
+  border-bottom: 100px solid #f0db4f;
+  margin: 15px auto;
+}
 
 .formCirculo {
   width: 100%;
   height: auto;
-  background-color: yellowgreen;
+  background-color: #323330;
+}
+.formCirculo .formCirculo__contenedor .poligCirculo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: #f0db4f;
+  margin: 15px auto;
 }
 
 .footer {
   width: 100%;
   height: 5rem;
-  background-color: #e44232;
+  background-color: #323330;
 }
 
 /*# sourceMappingURL=style.css.map */
