@@ -15,9 +15,14 @@ let ladoCuadrado = document.querySelector("#ladoCuadrado"),
     resultadoCuadrado = document.querySelector("#resultadoCuadrado");
 
 btnPerimetroCuadrado.addEventListener("click", () => {
-    resultadoCuadrado.textContent = "";
-    resultadoCuadrado.textContent = perimetroCuadrado(ladoCuadrado.value);
+    if (ladoCuadrado.value == "") {
+        alert("Ingresa los datos por favor!");
+    } else {
+        resultadoCuadrado.textContent = "";
+        resultadoCuadrado.textContent = perimetroCuadrado(ladoCuadrado.value);
+    }
 });
+
 btnAreaCuadrado.addEventListener("click", () => {
     resultadoCuadrado.textContent = "";
     resultadoCuadrado.textContent = areaCuadrado(ladoCuadrado.value);
@@ -52,10 +57,7 @@ btnPerimetroTriangulo.addEventListener("click", () => {
 });
 btnAreaTriangulo.addEventListener("click", () => {
     resultadoTriangulo.textContent = "";
-    resultadoTriangulo.textContent = areaTriangulo(
-        baseTriangulo.value,
-        alturaTriangulo.value
-    );
+    resultadoTriangulo.textContent = areaTriangulo(baseTriangulo.value, alturaTriangulo.value);
 });
 
 // Círculos
