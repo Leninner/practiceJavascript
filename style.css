@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.title h2, .salarios__info .contenedor__salarios--info .salarios--details h2, .porcentajes__info .contenedor__porcentajes--info .porcentajes--details h2, .geometria__info .contenedor__geometria--info .geometria--details h2 {
+  margin-bottom: 20px;
+}
+
 .header {
   width: 100%;
   height: 110px;
@@ -104,19 +108,80 @@
 
 .geometria__info {
   width: 100%;
-  height: 100vh;
+  min-height: calc(100vh - 110px);
   display: flex;
   align-items: center;
 }
-.geometria__info div {
-  width: 40%;
-  margin: 0 auto;
-  height: 80%;
-  background-color: red;
+.geometria__info .contenedor__geometria--info {
+  width: 50%;
+  display: flex;
+  height: calc(100vh - 110px);
+  align-items: center;
 }
-.geometria__info div .contenedor__geometria--info h2 > em {
-  margin-bottom: 20px;
-  font-size: 30px;
+.geometria__info .contenedor__geometria--info .geometria--details {
+  width: 74%;
+  height: 50%;
+  margin: 0 auto;
+  color: #323330;
+  font-size: 25px;
+}
+.geometria__info .contenedor__geometria--info .geometria--img {
+  margin: 0 auto;
+}
+.geometria__info .contenedor__geometria--info .geometria--img img {
+  width: 450px;
+}
+
+.porcentajes__info {
+  width: 100%;
+  min-height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+}
+.porcentajes__info .contenedor__porcentajes--info {
+  width: 50%;
+  display: flex;
+  height: calc(100vh - 110px);
+  align-items: center;
+}
+.porcentajes__info .contenedor__porcentajes--info .porcentajes--img {
+  margin: 0 auto;
+}
+.porcentajes__info .contenedor__porcentajes--info .porcentajes--img img {
+  width: 450px;
+}
+.porcentajes__info .contenedor__porcentajes--info .porcentajes--details {
+  width: 74%;
+  height: 50%;
+  margin: 0 auto;
+  color: #323330;
+  font-size: 25px;
+}
+
+.salarios__info {
+  width: 100%;
+  min-height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+}
+.salarios__info .contenedor__salarios--info {
+  width: 50%;
+  display: flex;
+  height: calc(100vh - 110px);
+  align-items: center;
+}
+.salarios__info .contenedor__salarios--info .salarios--details {
+  width: 74%;
+  height: 50%;
+  margin: 0 auto;
+  color: #323330;
+  font-size: 25px;
+}
+.salarios__info .contenedor__salarios--info .salarios--img {
+  margin: 0 auto;
+}
+.salarios__info .contenedor__salarios--info .salarios--img img {
+  width: 450px;
 }
 
 @media only screen and (max-width: 835px) {
@@ -126,7 +191,6 @@
   }
   .header .header__title {
     margin-left: 23px;
-    width: 80%;
     letter-spacing: 1px;
   }
   .header .header__title img {
@@ -136,14 +200,56 @@
     margin-right: 15px;
     margin-left: calc(24px - 5px);
   }
+  .header .header__menu {
+    text-align: right;
+  }
   .header .header__menu nav {
     display: none;
   }
   .header .header__menu .header__menu--icon {
     display: inline;
   }
+
+  .info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .info .contenedor__info {
+    width: 100%;
+  }
+  .info .contenedor__info .contenedor__info--img img {
+    width: 650px;
+  }
+
+  .geometria__info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .geometria__info .contenedor__geometria--info {
+    width: 100%;
+  }
+
+  .porcentajes__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .porcentajes__info .contenedor__porcentajes--info {
+    width: 100%;
+  }
+
+  .salarios__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .salarios__info .contenedor__salarios--info {
+    width: 100%;
+  }
 }
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 704px) {
   .header {
     width: 100%;
     height: 77px;
@@ -166,6 +272,18 @@
   }
   .header .header__menu .header__menu--icon {
     display: inline;
+  }
+
+  .info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .info .contenedor__info {
+    width: 100%;
+  }
+  .info .contenedor__info .contenedor__info--img img {
+    width: 320px;
   }
 }
 

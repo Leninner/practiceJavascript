@@ -8,6 +8,40 @@
 $background-main: #323330;
 $color-main: #f0db4f;
 
+.title {
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@mixin mainStyle {
+    width: 100%;
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+}
+
+@mixin contenedorMain {
+    width: 50%;
+    display: flex;
+    height: calc(100vh - 110px);
+    align-items: center;
+}
+
+@mixin details {
+    width: 74%;
+    height: 50%;
+    margin: 0 auto;
+    color: $background-main;
+    font-size: 25px;
+}
+@mixin img {
+    margin: 0 auto;
+    img {
+        width: 450px;
+    }
+}
+
 .header {
     width: 100%;
     height: 110px;
@@ -72,23 +106,13 @@ $color-main: #f0db4f;
 }
 
 .info {
-    width: 100%;
-    min-height: calc(100vh - 110px);
-    display: flex;
-    align-items: center;
+    @include mainStyle;
 
     .contenedor__info {
-        width: 50%;
-        display: flex;
-        height: calc(100vh - 110px);
-        align-items: center;
+        @include contenedorMain;
 
         .contenedor__info--details {
-            width: 74%;
-            height: 50%;
-            margin: 0 auto;
-            color: $background-main;
-            font-size: 25px;
+            @include details;
 
             button {
                 text-align: center;
@@ -105,31 +129,49 @@ $color-main: #f0db4f;
         }
 
         .contenedor__info--img {
-            margin: 0 auto;
-            img {
-                width: 450px;
-            }
+            @include img;
         }
     }
 }
 
 .geometria__info {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    @include mainStyle;
+    .contenedor__geometria--info {
+        @include contenedorMain;
+        .geometria--details {
+            @include details;
+            @extend .title;
+        }
+        .geometria--img {
+            @include img;
+        }
+    }
+}
 
-    div {
-        width: 40%;
-        margin: 0 auto;
-        height: 80%;
-        background-color: red;
+.porcentajes__info {
+    @include mainStyle;
+    .contenedor__porcentajes--info {
+        @include contenedorMain;
+        .porcentajes--img {
+            @include img;
+        }
+        .porcentajes--details {
+            @include details;
+            @extend .title;
+        }
+    }
+}
 
-        .contenedor__geometria--info {
-            h2 > em {
-                margin-bottom: 20px;
-                font-size: 30px;
-            }
+.salarios__info {
+    @include mainStyle;
+    .contenedor__salarios--info {
+        @include contenedorMain;
+        .salarios--details {
+            @include details;
+            @extend .title;
+        }
+        .salarios--img {
+            @include img;
         }
     }
 }
@@ -140,7 +182,6 @@ $color-main: #f0db4f;
         font-size: 10px;
         .header__title {
             margin-left: 23px;
-            width: 80%;
             letter-spacing: 1px;
             img {
                 width: 40px;
@@ -151,6 +192,7 @@ $color-main: #f0db4f;
             }
         }
         .header__menu {
+            text-align: right;
             nav {
                 display: none;
             }
@@ -159,9 +201,46 @@ $color-main: #f0db4f;
             }
         }
     }
+    .info {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        .contenedor__info {
+            width: 100%;
+            .contenedor__info--img {
+                img {
+                    width: 650px;
+                }
+            }
+        }
+    }
+    .geometria__info {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        .contenedor__geometria--info {
+            width: 100%;
+        }
+    }
+    .porcentajes__info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .contenedor__porcentajes--info {
+            width: 100%;
+        }
+    }
+    .salarios__info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .contenedor__salarios--info {
+            width: 100%;
+        }
+    }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 704px) {
     .header {
         width: 100%;
         height: 77px;
@@ -184,6 +263,19 @@ $color-main: #f0db4f;
             }
             .header__menu--icon {
                 display: inline;
+            }
+        }
+    }
+    .info {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        .contenedor__info {
+            width: 100%;
+            .contenedor__info--img {
+                img {
+                    width: 320px;
+                }
             }
         }
     }
