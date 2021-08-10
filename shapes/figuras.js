@@ -15,17 +15,24 @@ let ladoCuadrado = document.querySelector("#ladoCuadrado"),
     resultadoCuadrado = document.querySelector("#resultadoCuadrado");
 
 btnPerimetroCuadrado.addEventListener("click", () => {
-    if (ladoCuadrado.value == "") {
+    if (!ladoCuadrado.value) {
         alert("Ingresa los datos por favor!");
-    } else {
         resultadoCuadrado.textContent = "";
+    } else {
         resultadoCuadrado.textContent = perimetroCuadrado(ladoCuadrado.value);
     }
+    ladoCuadrado.value = "";
 });
 
 btnAreaCuadrado.addEventListener("click", () => {
-    resultadoCuadrado.textContent = "";
-    resultadoCuadrado.textContent = areaCuadrado(ladoCuadrado.value);
+    if (!ladoCuadrado.value) {
+        alert("Ingresa los datos por favor!");
+        resultadoCuadrado.textContent = "";
+    } else {
+        resultadoCuadrado.textContent = "";
+        resultadoCuadrado.textContent = areaCuadrado(ladoCuadrado.value);
+    }
+    ladoCuadrado.value = "";
 });
 
 // Triángulos
@@ -48,16 +55,32 @@ let ladoATriangulo = document.querySelector("#ladoATriangulo"),
     resultadoTriangulo = document.querySelector("#resultadoTriangulo");
 
 btnPerimetroTriangulo.addEventListener("click", () => {
-    resultadoTriangulo.textContent = "";
-    resultadoTriangulo.textContent = perimetroTriangulo(
-        ladoATriangulo.value,
-        ladoBTriangulo.value,
-        baseTriangulo.value
-    );
+    if (!ladoATriangulo.value || !ladoBTriangulo.value || !baseTriangulo.value) {
+        alert("Completa el lado A, lado B y la base!");
+        resultadoTriangulo.textContent = "";
+    } else {
+        resultadoTriangulo.textContent = "";
+        resultadoTriangulo.textContent = perimetroTriangulo(
+            ladoATriangulo.value,
+            ladoBTriangulo.value,
+            baseTriangulo.value
+        );
+    }
+    ladoATriangulo.value = "";
+    ladoBTriangulo.value = "";
+    baseTriangulo.value = "";
 });
+
 btnAreaTriangulo.addEventListener("click", () => {
-    resultadoTriangulo.textContent = "";
-    resultadoTriangulo.textContent = areaTriangulo(baseTriangulo.value, alturaTriangulo.value);
+    if (!baseTriangulo || !alturaTriangulo) {
+        alert("Completa el campo de Altura y Base correctamente!");
+        resultadoTriangulo.textContent = "";
+    } else {
+        resultadoTriangulo.textContent = "";
+        resultadoTriangulo.textContent = areaTriangulo(baseTriangulo.value, alturaTriangulo.value);
+    }
+    alturaTriangulo.value = "";
+    baseTriangulo.value = "";
 });
 
 // Círculos
@@ -77,14 +100,28 @@ let circunferencia = document.querySelector("#diametro"),
     resultadoCirculo = document.querySelector("#resultadoCirculo");
 
 btnPerimetroCirculo.addEventListener("click", () => {
-    resultadoCirculo.textContent = "";
-    resultadoCirculo.textContent = perimetroCirculo(circunferencia.value);
-});
-btnAreaCirculo.addEventListener("click", () => {
-    resultadoCirculo.textContent = "";
-    resultadoCirculo.textContent = areaCirculo(circunferencia.value);
+    if (!circunferencia.value) {
+        alert("Ingresa el valor del diámetro!");
+        resultadoCirculo.textContent = "";
+    } else {
+        resultadoCirculo.textContent = "";
+        resultadoCirculo.textContent = perimetroCirculo(circunferencia.value);
+    }
+    circunferencia.value = "";
 });
 
+btnAreaCirculo.addEventListener("click", () => {
+    if (!circunferencia.value) {
+        alert("Ingresa el valor del diámetro");
+        resultadoCirculo.textContent = "";
+    } else {
+        resultadoCirculo.textContent = "";
+        resultadoCirculo.textContent = areaCirculo(circunferencia.value);
+    }
+    circunferencia.value = "";
+});
+
+// NOTE: Triángulo Isósceles
 // const alturaIsosceles = (ladoUno, ladoDos, base) => {
 //     return ladoUno == ladoDos ? Math.sqrt(ladoUno ** 2 - base ** 2 / 4) : 0;
 // };
