@@ -1,0 +1,27 @@
+{
+    "name": "practicejavascript",
+    "version": "1.0.0",
+    "description": "Proyecto de los taller prácticos de Javascript",
+    "main": "main.js",
+    "scripts": {
+        "start": "live-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Leninner/practiceJavascript.git"
+    },
+    "keywords": [
+        "javascript",
+        "DOM",
+        "sass"
+    ],
+    "author": "Leninner",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Leninner/practiceJavascript/issues"
+    },
+    "homepage": "https://github.com/Leninner/practiceJavascript#readme",
+    "devDependencies": {
+        "live-server": "^1.2.1"
+    }
+}
