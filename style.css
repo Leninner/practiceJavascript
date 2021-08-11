@@ -280,6 +280,25 @@
   .salarios__info .contenedor__salarios--info {
     width: 100%;
   }
+
+  .footer {
+    height: 90px;
+  }
+  .footer .contenedor__footer p {
+    display: none;
+  }
+  .footer .github img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .linkedin img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .gmail img {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media only screen and (max-width: 704px) {
   .header {

@@ -275,6 +275,32 @@ $color-main: #f0db4f;
             width: 100%;
         }
     }
+    .footer {
+        height: 90px;
+        .contenedor__footer {
+            p {
+                display: none;
+            }
+        }
+        .github {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .linkedin {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .gmail {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 704px) {
