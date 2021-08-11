@@ -41,8 +41,7 @@ $color-main: #f0db4f;
         width: 450px;
     }
 }
-
-.header {
+@mixin headerAndFooter {
     width: 100%;
     height: 110px;
     background-color: $background-main;
@@ -50,6 +49,10 @@ $color-main: #f0db4f;
     font-size: 18px;
     display: flex;
     align-items: center;
+}
+
+.header {
+    @include headerAndFooter;
 
     .header__title {
         flex: 1.2;
@@ -172,6 +175,40 @@ $color-main: #f0db4f;
         }
         .salarios--img {
             @include img;
+        }
+    }
+}
+
+.footer {
+    @include headerAndFooter;
+    justify-content: space-around;
+    letter-spacing: 1px;
+
+    img {
+        margin-right: 15px;
+    }
+
+    .contenedor__footer {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .github {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .linkedin {
+        img {
+            width: 42%;
+            height: 42%;
+        }
+    }
+    .gmail {
+        img {
+            width: 70px;
+            height: 70px;
         }
     }
 }
