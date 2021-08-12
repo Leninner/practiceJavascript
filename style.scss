@@ -196,6 +196,9 @@ p {
     }
 
     .contenedor__footer {
+        p {
+            margin-bottom: 0px;
+        }
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -208,8 +211,8 @@ p {
     }
     .linkedin {
         img {
-            width: 42%;
-            height: 42%;
+            width: 70px;
+            height: 70px;
         }
     }
     .gmail {
