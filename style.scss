@@ -51,6 +51,19 @@ $color-main: #f0db4f;
     align-items: center;
 }
 
+button {
+    text-align: center;
+    margin-top: 50px;
+    border-style: none;
+    background-color: $background-main;
+    color: $color-main;
+    width: 235px;
+    height: 65px;
+    border-radius: 16px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
 .header {
     @include headerAndFooter;
 
@@ -116,19 +129,6 @@ $color-main: #f0db4f;
 
         .contenedor__info--details {
             @include details;
-
-            button {
-                text-align: center;
-                margin-top: 50px;
-                border-style: none;
-                background-color: $background-main;
-                color: $color-main;
-                width: 235px;
-                height: 65px;
-                border-radius: 16px;
-                font-size: 26px;
-                font-weight: bold;
-            }
         }
 
         .contenedor__info--img {
