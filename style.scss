@@ -53,15 +53,19 @@ $color-main: #f0db4f;
 
 button {
     text-align: center;
-    margin-top: 50px;
     border-style: none;
     background-color: $background-main;
     color: $color-main;
     width: 235px;
     height: 65px;
+    margin-bottom: 15px;
     border-radius: 16px;
     font-size: 26px;
     font-weight: bold;
+}
+
+p {
+    margin-bottom: 50px;
 }
 
 .header {
@@ -129,6 +133,9 @@ button {
 
         .contenedor__info--details {
             @include details;
+            h2 {
+                margin-bottom: 50px;
+            }
         }
 
         .contenedor__info--img {

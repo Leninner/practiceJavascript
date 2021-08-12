@@ -2,7 +2,6 @@
     "name": "practicejavascript",
     "version": "1.0.0",
     "description": "Proyecto de los taller prácticos de Javascript",
-    "main": "main.js",
     "scripts": {
         "start": "live-server"
     },

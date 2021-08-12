@@ -11,15 +11,19 @@
 
 button {
   text-align: center;
-  margin-top: 50px;
   border-style: none;
   background-color: #323330;
   color: #f0db4f;
   width: 235px;
   height: 65px;
+  margin-bottom: 15px;
   border-radius: 16px;
   font-size: 26px;
   font-weight: bold;
+}
+
+p {
+  margin-bottom: 50px;
 }
 
 .header {
@@ -99,6 +103,9 @@ button {
   margin: 0 auto;
   color: #323330;
   font-size: 25px;
+}
+.info .contenedor__info .contenedor__info--details h2 {
+  margin-bottom: 50px;
 }
 .info .contenedor__info .contenedor__info--img {
   margin: 0 auto;
