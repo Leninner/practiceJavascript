@@ -22,6 +22,12 @@ button {
   font-weight: bold;
 }
 
+button:hover {
+  color: #323330;
+  background-color: #f0db4f;
+  transition: 1000ms;
+}
+
 p {
   margin-bottom: 50px;
 }

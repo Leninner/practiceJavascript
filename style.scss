@@ -64,6 +64,12 @@ button {
     font-weight: bold;
 }
 
+button:hover {
+    color: $background-main;
+    background-color: $color-main;
+    transition: 1000ms;
+}
+
 p {
     margin-bottom: 50px;
 }
