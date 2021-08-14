@@ -10,32 +10,43 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet"
         />
     </head>
     <body>
         <header class="header">
-            <h1>Porcentajes y Descuentos</h1>
-            <p>Este es el segundo taller de Javascript</p>
+            <div class="header__title">
+                <h1>Descuentos y Porcentajes</h1>
+            </div>
+            <div class="header__menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Volver</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <section>
-            <h2>Calcula el precio a pagar con descuento</h2>
-            <form action="" id="formDiscount">
-                <label for="inputPrice">Escribe el precio de tu producto</label>
-                <input id="inputPrice" type="number" />
+        <section class="formDescuentos">
+            <div class="formDescuentos__contenedor">
+                <h2>Calcular Descuentos</h2>
+                <form action="" id="formDiscount">
+                    <label for="inputPrice">Precio del producto</label>
+                    <input id="inputPrice" type="number" placeholder="Precio Producto" />
 
-                <label for="inputDiscount">Escribe el descuento de tu producto</label>
-                <input type="number" id="inputDiscount" />
+                    <label for="inputDiscount"
+                        >Descuento <input type="number" id="inputDiscount" placeholder="Descuento Producto"
+                    /></label>
 
-                <label for="checkbox">¿Tienes un Cupón?<input type="checkbox" id="checkbox" /></label>
-                <label for="cupones">Cupón: <input type="text" id="cupones" placeholder="Nombre" /></label>
+                    <label for="checkbox">¿Cupón? <input type="checkbox" id="checkbox" /></label>
+                    <label for="cupones">Cupón: <input type="text" id="cupones" placeholder="Nombre" /></label>
 
-                <button type="button" id="calcDiscount">Calcular el precio con descuento</button>
+                    <button type="button" id="calcDiscount">Calcular</button>
 
-                <label for="" id="labelResult"></label>
-            </form>
+                    <label for="" id="labelResult"></label>
+                </form>
+            </div>
         </section>
 
         <footer class="footer">footer</footer>
