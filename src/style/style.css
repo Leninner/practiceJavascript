@@ -233,6 +233,30 @@ p {
   height: 70px;
 }
 
+.menuResponsive {
+  display: none;
+  width: 100%;
+  height: 50px;
+  background-color: #323330;
+}
+
+.menuResponsive.active {
+  display: block;
+}
+.menuResponsive.active nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menuResponsive.active nav ul li {
+  margin-top: 15px;
+  list-style: none;
+}
+.menuResponsive.active nav ul li a {
+  text-decoration: none;
+  color: #f0db4f;
+}
+
 @media only screen and (max-width: 835px) {
   .header {
     height: 90px;
@@ -256,16 +280,19 @@ p {
     display: none;
   }
   .header .header__menu .header__menu--icon {
-    display: inline;
+    display: block;
+    margin-right: 35px;
   }
 
   .info {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-top: 15px;
   }
   .info .contenedor__info {
     width: 100%;
+    height: auto;
   }
   .info .contenedor__info .contenedor__info--img img {
     width: 650px;
@@ -278,6 +305,10 @@ p {
   }
   .geometria__info .contenedor__geometria--info {
     width: 100%;
+    height: auto;
+  }
+  .geometria__info .contenedor__geometria--info .geometria--img img {
+    width: 85%;
   }
 
   .porcentajes__info {
@@ -287,6 +318,10 @@ p {
   }
   .porcentajes__info .contenedor__porcentajes--info {
     width: 100%;
+    height: auto;
+  }
+  .porcentajes__info .contenedor__porcentajes--info .porcentajes--img img {
+    width: 85%;
   }
 
   .salarios__info {
@@ -296,6 +331,11 @@ p {
   }
   .salarios__info .contenedor__salarios--info {
     width: 100%;
+    height: auto;
+  }
+  .salarios__info .contenedor__salarios--info .salarios--img img {
+    width: 85%;
+    margin: 20px;
   }
 
   .footer {
@@ -319,9 +359,9 @@ p {
 }
 @media only screen and (max-width: 704px) {
   .header {
+    font-size: 8px;
     width: 100%;
     height: 77px;
-    font-size: 8px;
   }
   .header .header__title {
     margin-left: 23px;

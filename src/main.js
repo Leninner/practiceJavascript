@@ -28,3 +28,14 @@ btnDemoSalarios.onclick = () => {
 btnRepoSalarios.onclick = () => {
     window.open("https://github.com/Leninner/practiceJavascript/tree/main/salarios", "_blank");
 };
+
+const more = document.querySelector(".more");
+const menuResponsive = document.querySelector(".menuResponsive");
+
+more.addEventListener("click", () => {
+    if (!menuResponsive.classList.contains("active")) {
+        menuResponsive.classList.add("active");
+    } else {
+        menuResponsive.classList.remove("active");
+    }
+});

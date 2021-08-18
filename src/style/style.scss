@@ -229,6 +229,31 @@ p {
     }
 }
 
+.menuResponsive {
+    display: none;
+    width: 100%;
+    height: 50px;
+    background-color: $background-main;
+}
+.menuResponsive.active {
+    display: block;
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            li {
+                margin-top: 15px;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 835px) {
     .header {
         height: 90px;
@@ -250,16 +275,21 @@ p {
                 display: none;
             }
             .header__menu--icon {
-                display: inline;
+                display: block;
+                margin-right: 35px;
             }
         }
     }
+
     .info {
         display: flex;
         text-align: center;
         flex-direction: column;
+        margin-top: 15px;
         .contenedor__info {
             width: 100%;
+            height: auto;
+
             .contenedor__info--img {
                 img {
                     width: 650px;
@@ -273,14 +303,27 @@ p {
         flex-direction: column;
         .contenedor__geometria--info {
             width: 100%;
+            height: auto;
+            .geometria--img {
+                img {
+                    width: 85%;
+                }
+            }
         }
     }
+
     .porcentajes__info {
         display: flex;
         flex-direction: column;
         text-align: center;
         .contenedor__porcentajes--info {
             width: 100%;
+            height: auto;
+            .porcentajes--img {
+                img {
+                    width: 85%;
+                }
+            }
         }
     }
     .salarios__info {
@@ -289,8 +332,16 @@ p {
         text-align: center;
         .contenedor__salarios--info {
             width: 100%;
+            height: auto;
+            .salarios--img {
+                img {
+                    width: 85%;
+                    margin: 20px;
+                }
+            }
         }
     }
+
     .footer {
         height: 90px;
         .contenedor__footer {
@@ -321,9 +372,9 @@ p {
 
 @media only screen and (max-width: 704px) {
     .header {
+        font-size: 8px;
         width: 100%;
         height: 77px;
-        font-size: 8px;
         .header__title {
             margin-left: 23px;
             width: 80%;
