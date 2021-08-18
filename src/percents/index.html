@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Salarios</title>
+        <title>Porcentajes y Descuentos</title>
         <link rel="icon" href="../images/mainLogo.png" />
         <link rel="stylesheet" href="./style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,30 +17,36 @@
     <body>
         <header class="header">
             <div class="header__title">
-                <h1>Top Salarios - Ecuador</h1>
+                <h1>Descuentos y Porcentajes</h1>
             </div>
             <div class="header__menu">
-                <div class="header__menu--icon">HI<img src="" alt="IMG" /></div>
                 <nav>
                     <ul>
-                        <li><a href="../index.html">Volver</a></li>
+                        <li><a href="../../index.html">Volver</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <section class="salarios">
-            <nav>
-                <ul class="salarios-lista"></ul>
-            </nav>
-        </section>
+        <section class="formDescuentos">
+            <div class="formDescuentos__contenedor">
+                <h2>Calcular Descuentos</h2>
+                <form action="" id="formDiscount">
+                    <label for="inputPrice">Precio del producto</label>
+                    <input id="inputPrice" type="number" placeholder="Precio Producto" />
 
-        <section class="info">
-            <section class="topTen">
-                <h1>Top Ten de Salarios en Ecuador</h1>
-                <ul class="topTen-list"></ul>
-            </section>
-            <section class="mediana"></section>
+                    <label for="inputDiscount"
+                        >Descuento <input type="number" id="inputDiscount" placeholder="Descuento Producto"
+                    /></label>
+
+                    <label for="checkbox">¿Cupón? <input type="checkbox" id="checkbox" /></label>
+                    <label for="cupones">Cupón: <input type="text" id="cupones" placeholder="Nombre" /></label>
+
+                    <button type="button" id="calcDiscount">Calcular</button>
+
+                    <label for="" id="labelResult"></label>
+                </form>
+            </div>
         </section>
 
         <footer class="footer">
@@ -55,8 +61,7 @@
             </div>
         </footer>
 
-        <script src="./salarios.js"></script>
-        <script src="./analisis.js"></script>
+        <script src="./descuentos.js"></script>
         <script src="./footer.js"></script>
     </body>
 </html>

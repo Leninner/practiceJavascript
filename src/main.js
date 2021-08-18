@@ -9,21 +9,21 @@ const btnSeeMore = document.querySelector("#btnSeeMore"),
 btnSeeMore.onclick = () => (location.hash = "#geometria__info"); // NOTE: Location.hash sirve para movernos entre secciones de una página web.
 
 btnDemoGeometria.onclick = () => {
-    window.open("./shapes/index.html", "_blank");
+    window.open("./src/shapes/index.html", "_blank");
 };
 btnRepoGeometria.onclick = () => {
     window.open("https://github.com/Leninner/practiceJavascript/tree/main/shapes", "_blank");
 };
 
 btnDemoPorcentajes.onclick = () => {
-    window.open("./percents/index.html", "_blank");
+    window.open("./src/percents/index.html", "_blank");
 };
 btnRepoPorcentajes.onclick = () => {
     window.open("https://github.com/Leninner/practiceJavascript/tree/main/percents", "_blank");
 };
 
 btnDemoSalarios.onclick = () => {
-    window.open("./salarios/index.html", "_blank");
+    window.open("./src/salarios/index.html", "_blank");
 };
 btnRepoSalarios.onclick = () => {
     window.open("https://github.com/Leninner/practiceJavascript/tree/main/salarios", "_blank");
