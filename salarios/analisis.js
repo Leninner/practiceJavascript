@@ -17,7 +17,7 @@ const salariosEcuador = ecuador.map((persona) => {
 });
 
 const salariosEcuSorted = salariosEcuador.sort((salarioA, salarioB) => {
-    return salarioA - salarioB;
+    return salarioB - salarioA;
 });
 
 function medianaSalariosEcu(lista) {
@@ -60,3 +60,24 @@ console.log({ medianaGeneralEcu, medianaTop10Ecu });
 
 //TODO: https://www.glajumedia.com/wp-content/uploads/2019/12/ecommerce-website-kbworks.png
 //Inspiración
+
+const salarios = document.querySelector(".salarios-lista"),
+    mediana = document.querySelector(".mediana"),
+    topTenlist = document.querySelector(".topTen-list");
+
+ecuador.forEach((Element) => {
+    const main = document.createElement("li");
+    main.textContent = `$${Element.salary} - ${Element.name}`;
+    salarios.appendChild(main);
+});
+
+for (let i = 0; i < 10; i++) {
+    const sorted = document.createElement("li");
+    sorted.textContent = `${i + 1}. ${salariosEcuSorted[i]}`;
+    topTenlist.appendChild(sorted);
+}
+
+mediana.innerHTML = `<h1>Mediana General y del Top 10% en Ecuador</h1>
+<p>$${medianaTop10Ecu} es la mediana del Top 10% del Ecuador</p>
+<br>
+<p>$${medianaGeneralEcu} es la mediana general en el Estado Ecuatoriano</p>`;

@@ -60,5 +60,3 @@ ecuador.push({
     name: "Angela",
     salary: 6500,
 });
-
-console.log(ecuador);
