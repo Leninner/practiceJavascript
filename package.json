@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Proyecto de los taller prácticos de Javascript",
     "scripts": {
-        "start": "parcel index.html percents/index.html salarios/index.html shapes/index.html"
+        "start": "live-server"
     },
     "repository": {
         "type": "git",
@@ -21,6 +21,6 @@
     },
     "homepage": "https://github.com/Leninner/practiceJavascript#readme",
     "devDependencies": {
-        "parcel-bundler": "^1.12.5"
+        "live-server": "^1.2.1"
     }
 }
