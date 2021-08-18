@@ -145,3 +145,36 @@ body {
 h1 {
     margin-bottom: 15px;
 }
+
+@mixin img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer {
+    @include headerAndFooter;
+    justify-content: space-around;
+    letter-spacing: 1px;
+
+    img {
+        margin-right: 15px;
+    }
+
+    .contenedor__footer {
+        p {
+            margin-bottom: 0px;
+        }
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .github {
+        @include img;
+    }
+    .linkedin {
+        @include img;
+    }
+    .gmail {
+        @include img;
+    }
+}

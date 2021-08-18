@@ -22,11 +22,14 @@ const cuponesDescuento = {
     20: "wilche",
     12.63: "marco",
     78: "jeje",
+    45: "kimberly",
+    23: "hi",
+    56: "pretemporada",
 };
 
 btnCalcDiscount.addEventListener("click", () => {
     if (checkCupon.checked) {
-        if (cupones.value == "") {
+        if (!cupones.value) {
             alert("Completa el campo de cupón!");
         } else {
             Object.keys(cuponesDescuento).forEach((Element) => {
