@@ -162,4 +162,83 @@ h1 {
   height: 50px;
 }
 
+@media only screen and (max-width: 835px) {
+  .header {
+    height: 90px;
+  }
+  .header .header__title h1 {
+    margin-left: 23px;
+    font-size: 20px;
+  }
+
+  .info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 25px;
+    background-color: #f0db4f;
+  }
+  .info .topTen {
+    cursor: pointer;
+    outline: 1px solid #323330;
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info .topTen ul {
+    text-align: center;
+  }
+  .info .topTen ul li {
+    list-style: none;
+    width: 150px;
+    height: 30px;
+  }
+  .info .topTen ul li:hover {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .info .mediana {
+    cursor: pointer;
+    outline: 2px solid #323330;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .footer {
+    height: 90px;
+  }
+  .footer .contenedor__footer p {
+    display: none;
+  }
+  .footer .github img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .linkedin img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .gmail img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 704px) {
+  .header {
+    font-size: 8px;
+    width: 100%;
+    height: 77px;
+  }
+  .header .header__title {
+    margin-left: 23px;
+    width: 80%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
