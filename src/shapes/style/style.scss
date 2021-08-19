@@ -89,7 +89,7 @@ button:hover {
         }
     }
 
-    .menu {
+    .header__menu {
         flex: 1;
         margin-right: 15px;
 
@@ -223,5 +223,109 @@ button:hover {
     }
     .gmail {
         @include img;
+    }
+}
+
+.menuResponsive {
+    display: none;
+    width: 100%;
+    height: 50px;
+    background-color: $background-main;
+}
+.menuResponsive.active {
+    display: block;
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            li {
+                margin-top: 15px;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .header {
+        height: 90px;
+
+        .header__section {
+            margin-left: 60px;
+            h1 {
+                cursor: pointer;
+                font-size: 26px;
+            }
+            p {
+                display: none;
+            }
+        }
+
+        .header__menu {
+            text-align: right;
+            nav {
+                display: none;
+            }
+            .header__menu--icon {
+                display: inline;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .footer {
+        height: 90px;
+        .contenedor__footer {
+            p {
+                display: none;
+            }
+        }
+        .github {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .linkedin {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .gmail {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 704px) {
+    .header {
+        font-size: 8px;
+        width: 100%;
+        height: 77px;
+        .header__menu {
+            margin-left: 23px;
+        }
+    }
+    .info {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        .contenedor__info {
+            width: 100%;
+            .contenedor__info--img {
+                img {
+                    width: 320px;
+                }
+            }
+        }
     }
 }

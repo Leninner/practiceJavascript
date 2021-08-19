@@ -15,3 +15,14 @@ linkedin.addEventListener("click", () => {
 gmail.addEventListener("click", () => {
     location.href = "mailto:mazabandalenin180@gmail.com";
 });
+
+const more = document.querySelector(".more");
+const menuResponsive = document.querySelector(".menuResponsive");
+
+more.addEventListener("click", () => {
+    if (!menuResponsive.classList.contains("active")) {
+        menuResponsive.classList.add("active");
+    } else {
+        menuResponsive.classList.remove("active");
+    }
+});

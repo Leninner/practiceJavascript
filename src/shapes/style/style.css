@@ -64,31 +64,31 @@ button:hover {
   font-size: 16px;
   letter-spacing: 1px;
 }
-.header .menu {
+.header .header__menu {
   flex: 1;
   margin-right: 15px;
 }
-.header .menu ul {
+.header .header__menu ul {
   display: flex;
   align-items: center;
   margin-right: 20px;
   justify-content: space-evenly;
 }
-.header .menu ul li {
+.header .header__menu ul li {
   cursor: pointer;
   list-style: none;
   border-top: 1px solid #323330;
   border-right: 1px solid #323330;
   border-left: 1px solid #323330;
 }
-.header .menu ul li a {
+.header .header__menu ul li a {
   height: 50px;
   text-decoration: none;
   color: #f0db4f;
   display: flex;
   align-items: center;
 }
-.header .menu ul li a:hover {
+.header .header__menu ul li a:hover {
   border-bottom: 1px solid #f0db4f;
 }
 
@@ -196,6 +196,97 @@ button:hover {
 .footer .gmail {
   width: 50px;
   height: 50px;
+}
+
+.menuResponsive {
+  display: none;
+  width: 100%;
+  height: 50px;
+  background-color: #323330;
+}
+
+.menuResponsive.active {
+  display: block;
+}
+.menuResponsive.active nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menuResponsive.active nav ul li {
+  margin-top: 15px;
+  list-style: none;
+}
+.menuResponsive.active nav ul li a {
+  text-decoration: none;
+  color: #f0db4f;
+}
+
+@media only screen and (max-width: 835px) {
+  .header {
+    height: 90px;
+  }
+  .header .header__section {
+    margin-left: 60px;
+  }
+  .header .header__section h1 {
+    cursor: pointer;
+    font-size: 26px;
+  }
+  .header .header__section p {
+    display: none;
+  }
+  .header .header__menu {
+    text-align: right;
+  }
+  .header .header__menu nav {
+    display: none;
+  }
+  .header .header__menu .header__menu--icon {
+    display: inline;
+    margin-right: 15px;
+  }
+
+  .footer {
+    height: 90px;
+  }
+  .footer .contenedor__footer p {
+    display: none;
+  }
+  .footer .github img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .linkedin img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .gmail img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 704px) {
+  .header {
+    font-size: 8px;
+    width: 100%;
+    height: 77px;
+  }
+  .header .header__menu {
+    margin-left: 23px;
+  }
+
+  .info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .info .contenedor__info {
+    width: 100%;
+  }
+  .info .contenedor__info .contenedor__info--img img {
+    width: 320px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
