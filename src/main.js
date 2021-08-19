@@ -12,21 +12,21 @@ btnDemoGeometria.onclick = () => {
     window.open("./src/shapes/index.html", "_blank");
 };
 btnRepoGeometria.onclick = () => {
-    window.open("https://github.com/Leninner/practiceJavascript/tree/main/shapes", "_blank");
+    window.open("https://github.com/Leninner/practiceJavascript/tree/main/src/shapes", "_blank");
 };
 
 btnDemoPorcentajes.onclick = () => {
     window.open("./src/percents/index.html", "_blank");
 };
 btnRepoPorcentajes.onclick = () => {
-    window.open("https://github.com/Leninner/practiceJavascript/tree/main/percents", "_blank");
+    window.open("https://github.com/Leninner/practiceJavascript/tree/main/src/percents", "_blank");
 };
 
 btnDemoSalarios.onclick = () => {
     window.open("./src/salarios/index.html", "_blank");
 };
 btnRepoSalarios.onclick = () => {
-    window.open("https://github.com/Leninner/practiceJavascript/tree/main/salarios", "_blank");
+    window.open("https://github.com/Leninner/practiceJavascript/tree/main/src/salarios", "_blank");
 };
 
 const more = document.querySelector(".more");
