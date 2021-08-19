@@ -68,6 +68,9 @@ button:hover {
   flex: 1;
   margin-right: 15px;
 }
+.header .header__menu .header__menu--icon {
+  display: none;
+}
 .header .header__menu ul {
   display: flex;
   align-items: center;
@@ -109,7 +112,7 @@ button:hover {
   color: white;
   padding: 60px 68px 40px;
   min-height: 400px;
-  min-width: 200px;
+  min-width: 250px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -245,6 +248,18 @@ button:hover {
   .header .header__menu .header__menu--icon {
     display: inline;
     margin-right: 15px;
+  }
+
+  .formCuadrado .formCuadrado__contenedor {
+    width: 85%;
+  }
+
+  .formTriangulo .formTriangulo__contenedor {
+    width: 85%;
+  }
+
+  .formCirculo .formCirculo__contenedor {
+    width: 85%;
   }
 
   .footer {
